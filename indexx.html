@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Indexx Page</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- NAV -->
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="logo">Olaoluwa</div>
+    <nav class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div style="display:flex;gap:12px;align-items:center">
+      <button id="menuBtn" class="dark-toggle" style="padding:8px 12px;">☰</button>
+      <button class="dark-toggle" id="themeBtn">Dark Mode</button>
+    </div>
+  </div>
+</header>
+<div id="sidebar" class="sidebar">
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</div>
+<div id="overlay" class="overlay"></div>
+<!-- HERO -->
+<section id="hero" class="hero container">
+  <div class="hero-left">
+    <h1 class="main">Hi, I'm <span style="color:var(--orange)">Olaoluwa</span> — Front-End Developer</h1>
+    <p class="lead">I design and build clean, responsive and interactive websites with modern JavaScript, React, and intuitive UI design.</p>
+    <div class="cta">
+      <a class="btn" href="#projects">View Projects</a>
+      <a class="btn ghost" href="https://github.com/omoba-22/OlaoluwaOgunwale"> CV</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="ball-wrap" aria-hidden="true">
+      <div class="ball"><span style="font-size:clamp(.85rem,1.4vw,1.1rem)">It's all creativity</span></div>
+      <div class="shadow"></div>
+    </div>
+  </div>
+</section>
+<!-- ABOUT -->
+<section id="about" class="section container">
+  <div class="grid">
+    <div class="col-6" data-aos="fade-right">
+      <div class="card">
+        <h3>Profile</h3>
+        <p><strong>Name:</strong> Olaoluwa Ogunwale<br><strong>Role:</strong> Front-End Developer<br><strong>Location:</strong> Nigeria</p>
+      </div>
+    </div>
+    <div class="col-6" data-aos="fade-left">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>I'm a front-end developer passionate about building digital experiences that feel smooth, modern and visually balanced. I enjoy combining clean design with functional and accessible code. My focus is creating user interfaces that are fast, intuitive and pleasant to interact with.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SKILLS -->
+<section id="skills" class="section container">
+  <h2>Skills & Tools</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px">
+    <div class="card">
+      <div class="skill"><div class="label"><span>HTML</span><span>95%</span></div><div class="bar-bg"><div class="bar" data-value="95"></div></div></div>
+      <div class="skill"><div class="label"><span>CSS</span><span>95%</span></div><div class="bar-bg"><div class="bar" data-value="95"></div></div></div>
+      <div class="skill"><div class="label"><span>JavaScript</span><span>85%</span></div><div class="bar-bg"><div class="bar" data-value="85"></div></div></div>
+      <div class="skill"><div class="label"><span>Bootstrap</span><span>85%</span></div><div class="bar-bg"><div class="bar" data-value="90"></div></div></div>
+    </div>
+    <div class="card">
+      <div class="skill"><div class="label"><span>Tailwind CSS</span><span>90%</span></div><div class="bar-bg"><div class="bar" data-value="90"></div></div></div>
+      <div class="skill"><div class="label"><span>React</span><span>80%</span></div><div class="bar-bg"><div class="bar" data-value="80"></div></div></div>
+      <div class="skill"><div class="label"><span>Git & GitHub</span><span>80%</span></div><div class="bar-bg"><div class="bar" data-value="80"></div></div></div>
+    </div>
+  </div>
+</section>
+<!-- PROJECTS -->
+<section id="projects" class="section container">
+  <h2>Featured Projects</h2>
+  <div class="projects-grid" style="margin-top:18px">
+    <!-- Project 1 -->
+    <div class="project">
+      <div style="height:140px;border-radius:8px;background:linear-gradient(180deg,var(--orange),#ffb86b);display:flex;align-items:center;justify-content:center;color:#111;font-weight:900">Youtube Web App </div>
+      <h3>Cloned Front-End Of Youtube</h3>
+      <p>A clone of youtubes front-end with multiple pages and react features on pages.</p>
+      <div class="tags"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JS</span><span class="pill">REACT</span></div>
+      <div style="display:flex;gap:10px;margin-top:12px"><a class="btn" href="https://omoba-22.github.io/Youtube/" target="_blank">Live</a><a class="btn ghost" href="https://github.com/omoba-22/Youtube" target="_blank">Code</a></div>
+    </div>
+    <!-- Project 2 -->
+    <div class="project">
+      <div style="height:140px;border-radius:8px;background:linear-gradient(180deg,#6fb3ff,#3b82f6);display:flex;align-items:center;justify-content:center;color:#022; font-weight:900">Calculator App</div>
+      <h3>MS Native Calculator App</h3>
+      <p>Microsoft native desktop app that does simple arithemetics and saves progress on the history tab with sidebar features.</p>
+      <div class="tags"><span class="pill">JavaScript</span><span class="pill">CSS</span></div>
+      <div style="display:flex;gap:10px;margin-top:12px"><a class="btn" href=" https://omoba-22.github.io/Calculator-app/indexx.html" target="_blank">Live</a><a class="btn ghost" href="https://github.com/omoba-22/Calculator-app" target="_blank">Code</a></div>
+    </div>
+    <!-- Project 3 -->
+    <div class="project">
+      <div style="height:140px;border-radius:8px;background:linear-gradient(180deg,#ffd06b,#ff8c00);display:flex;align-items:center;justify-content:center;color:#111; font-weight:900">Movie Explorer</div>
+      <h3>Movie Search Explorer</h3>
+      <p>Search movies, view posters and details using a public movie API. Grid layout with pagination.</p>
+      <div class="tags"><span class="pill">JS</span><span class="pill">API</span></div>
+      <div style="display:flex;gap:10px;margin-top:12px"><a class="btn" href="https://omoba-22.github.io/Movies-app/" target="_blank">Live</a><a class="btn ghost" href="https://github.com/omoba-22/Movies-app" target="_blank">Code</a></div>
+    </div>
+    <!-- Project 4-->
+    <div class="project">
+      <div style="padding:12px;border-radius:8px;background:linear-gradient(180deg,#111,#222);color:#fff;display:flex;flex-direction:column;align-items:center;gap:10px">
+        <div style="width:100%;" class="center">
+          <div style="width:220px" id="tttWrap">
+            <div class="ttt-board" id="board"></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <a href="https://omoba-22.github.io/Tic-Tac-Toe/"><button class="btn" id="nextBtn" onclick="resetBoard()">Next round</button></a>
+          <a href="https://omoba-22.github.io/Tic-Tac-Toe/"><button class="btn ghost" onclick="goToMenu()">Menu</button></a>
+        </div>
+      </div>
+      <h3>Tic Tac Toe (Interactive)</h3>
+      <p>Fully functional Tic Tac Toe with single/multi player modes and scoring.</p>
+      <div class="tags"><span class="pill">JS</span><span class="pill">Game</span></div>
+    </div>
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact" class="section container">
+  <h2>Let's Work Together</h2>
+  <p>Want to collaborate or hire me? Send a message and I’ll respond quickly.</p>
+  <form class="contact-form" onsubmit="sendMail(event)">
+    <input class="input" id="nameInput" placeholder="Full name" required />
+    <input class="input" id="emailInput" type="email" placeholder="Email" required />
+    <textarea id="messageInput" placeholder="Message" required></textarea>
+    <button class="btn submit" type="submit">Send Message</button>
+  </form>
+  <h2 style="margin-top: 20px;">Connect With Me</h2>
+  <div style="margin-top:10px; display:flex; gap:12px; flex-wrap: wrap;">
+  <a href="https://github.com/omoba-22" target="_blank" class="pill add">
+    <span><img src="./Folder/multimedia/git.png" alt=""></span>GitHub
+  </a>
+  <a href="https://www.linkedin.com/in/olaolu-ogunwale-274b79395/" target="_blank" class="pill add">
+    <span><img src="./Folder/multimedia/liink-removebg-preview.png" alt=""></span>LinkedIn
+  </a>
+  <a href="https://t.me/Omoba_2" target="_blank" class="pill add">
+    <span><img src="./Folder/multimedia/ttt-removebg-preview.png" alt=""></span>Telegram
+  </a>
+  <a href="https://x.com/Omoba__2?t=Kur5Az0rVSk62J5Z5sTSLw&s=35" target="_blank" class="pill add">
+    <span><img src="./Folder/multimedia/x-removebg-preview.png" alt=""></span>Twitter
+  </a>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div style="margin-bottom:8px">© 2025 Olaoluwa. All rights reserved.</div>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 700,
+    once: true
+  });
+</script>
+<script src="./indexx.js"></script>
+</body>
+</html>
