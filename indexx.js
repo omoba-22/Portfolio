@@ -24,11 +24,6 @@ bars.forEach(bar => obs.observe(bar));
 // SIMPLE CONTACT HANDLER (mailto)
 function sendMail(e){e.preventDefault();const n=document.getElementById('nameInput').value.trim();const em=document.getElementById('emailInput').value.trim();const msg=document.getElementById('messageInput').value.trim();if(!n||!em||!msg){alert('Please fill all fields');return}const subject=encodeURIComponent('Portfolio contact from '+n);const body=encodeURIComponent(msg+'\n\n--\n'+n+'\n'+em);window.location.href=`mailto:olaoluogunwale@gmail.com?subject=${subject}&body=${body}`}
 
-
-createBoard();
-// expose some functions to global scope so buttons work
-window.resetBoard=resetBoard;window.goToMenu=goToMenu;
-
     const sidebar = document.getElementById("sidebar");
     const overlay = document.getElementById("overlay");
     const menuBtn = document.getElementById("menuBtn");
